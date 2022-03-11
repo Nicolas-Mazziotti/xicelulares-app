@@ -1,16 +1,16 @@
-//Traigo los productos, los mapeo y los pongo en el Home
+//Traigo los productos y los mapeo
+import { Fragment } from "react";
 import {ProductsData} from "../../Data/ProductsData";
+import Item from "../Item/Item";
 import './ItemListContainer.css'
 
 const ItemListContainer = () => {
     return (
         <div className="itemsContainer">
             {ProductsData.map((item) => (
-                <div className="itemsCard">
-                <img src={item.img} alt={item.modelo} />
-                <p>{item.modelo}</p>
-                <p>{item.precio}</p>
-                </div>
+                <Fragment>
+                    <Item key= {item.id} item={item}></Item>
+                </Fragment>
             ))}
         </div>
     )
