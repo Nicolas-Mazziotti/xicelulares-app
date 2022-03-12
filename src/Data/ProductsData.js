@@ -21,7 +21,7 @@ export const ProductsData = [
         descripcion: 'Xiaomi Redmi Note 10S 6GB/128GB Características Marca: Xiaomi Modelo: Redmi Note 10s Memoria interna: 128 GB Memoria RAM: 6 GB Dual SIM: si Compañía telefónica: Liberado Sistema operativo: Android Tamaño de la pantalla: 6.43" Resolución de la cámara: 64 Mpx Resolución de la cámara frontal: 13 Mpx Red: 5G Con pantalla táctil: Si Cámara digital: si Tipos de tarjeta de memoria: Micro Sd Capacidad de tarjeta de memoria: 512 GB USB: USB-C Wi-Fi: SI Con GPS: SI Radio: SI Reproductor de música: SI MP3: SI Grabador de voz: SI Resolución de video: 1920 px x 1080 px Sintonizador de TV: NO Versión del sistema operativo: 11 Tamaño de SIM: DUAL SIM Resolución de la pantalla: 2400 px x 1080 px Procesador: MediaTek Helio G95 Núcleos del procesador: 8 Velocidad del procesador: 2.05 GHz Tipo de batería: Polímero de litio Capacidad de la batería: 5000 mAh Sensor de movimiento: SI Brillo: SI Resolución de video frontal: 1920 px x 1080 px Cámara lenta: SI Con Bluetooth: SI Mini HDMI: NO Zoom óptico: SI Zoom digital: SI Tipo de pantalla: Dot Display Linterna: SI Es a prueba de agua: SI Giroscopio: SI Lector de huella digital: SI Sensor de proximidad: SI'
     },
     {
-        id: '4',
+        id: "4",
         modelo: "Xiaomi Mi Band Smartwatch",
         precio: 350,
         img: "/assets/smart-watch.png",
@@ -29,7 +29,7 @@ export const ProductsData = [
         descripcion:''
     },
     {
-        id: '5',
+        id: "5",
         modelo: "Xiaomi Redmi Airdots",
         precio: 350,
         img: "/assets/airpods.png",
@@ -37,7 +37,7 @@ export const ProductsData = [
         descripcion:''
     },
     {
-        id: '6',
+        id: "6",
         modelo: "Xiaomi Mi Robot Vacuum",
         precio: 350,
         img: "/assets/mi-robot.png",
