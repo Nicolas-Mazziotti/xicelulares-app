@@ -10,7 +10,7 @@ const ItemListContainer = () => {
     const [items, setItems] = useState (ProductsData)
     return (
         <div className="itemsContainer">
-            {items.map((item) => {
+            {items.map((item,) => {
                 return (
                 <Fragment>   
                     <Item key= {item.id} item={item}/>

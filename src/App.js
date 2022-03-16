@@ -18,7 +18,6 @@ function App() {
     <Router>
     <div className="App">
       <NavBar/>
-      <Cart/>
       <Routes>
         <Route path='/' element= {<Home/>}/>
         <Route path='/detail/:id' element= {<ItemDetailContainer/>}/>
