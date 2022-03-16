@@ -1,0 +1,26 @@
+.NavbarContainer{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 70px;
+    width: 100%;
+}
+.NavbarContainer a {
+    text-decoration: none;
+    color: white;
+}
+.NavbarList{
+    display: flex;
+    list-style: none;
+}
+.NavbarList a {
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+}
+.NavbarList a:hover{
+    background-color: royalblue;
+    border-radius: 5px;
+}

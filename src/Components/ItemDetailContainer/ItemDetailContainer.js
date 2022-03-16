@@ -7,6 +7,8 @@ const ItemDetailContainer = () => {
     const params = useParams()
     const itemLinkeado = ProductsData.find (item => item.id === params.id)
     console.log(itemLinkeado)
+    
+
   return (
     <ItemDetail item={itemLinkeado}/>
   )

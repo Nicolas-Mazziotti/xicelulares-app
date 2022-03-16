@@ -1,15 +1,18 @@
+import React, {useContext} from 'react'
+import { CartContext } from '../../Context/CartContext'
 
-import React from 'react'
+
 
 const ItemDetail = ({item}) => {
-  const addItem = () =>{
-    alert ('Se ha agregado al carrito')
-  }
+
+  const [addItem] = useContext (CartContext)
+  
+
   return (
     <div className='CardDetailContainer'>
         <h2>{item.modelo}</h2>
         <img src= {item.img} alt={item.modelo}/>
-        <button className='btn btn-primary' onClick={addItem}> Agregar al Carrito</button>
+        <button className='btn btn-primary'> Agregar al Carrito</button>
         <p>{item.descripcion}</p>
     </div>
   )

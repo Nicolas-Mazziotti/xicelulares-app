@@ -1,4 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
