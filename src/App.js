@@ -10,21 +10,19 @@ import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailCont
 //Context
 import CartProvider from './Context/CartContext';
 
-
-
 function App() {
   return (
     <CartProvider>
-    <Router>
-    <div className="App">
-      <NavBar/>
-      <Routes>
-        <Route path='/' element= {<Home/>}/>
-        <Route path='/detail/:id' element= {<ItemDetailContainer/>}/>
-        <Route path='/cart' element= {<Cart/>}></Route>
-      </Routes>
-    </div>
-    </Router>
+      <Router>
+        <div className="App">
+          <NavBar/>
+          <Routes>
+            <Route path='/' element= {<Home/>}/>
+            <Route path='/detail/:id' element= {<ItemDetailContainer/>}/>
+            <Route path='/cart' element= {<Cart/>}/>
+          </Routes>
+        </div>
+      </Router>
     </CartProvider>
   );
 }
