@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import { CartContext } from '../../Context/CartContext';
-import { setItemInCart, getItemFromStorage, PRODUCT_KEY } from '../../Context/Helpers/localStorage';
+import { setItemInCart, getItemFromStorage, PRODUCT_KEY } from '../../Helpers/localStorage';
 
 const ItemDetail = ({item}) => {
 
   const { setCartItems } = useContext(CartContext);
-
+  //funcion onclick
   const addToCart = (item) => {
     setItemInCart(PRODUCT_KEY, item);
     const products = getItemFromStorage(PRODUCT_KEY);

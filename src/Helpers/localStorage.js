@@ -1,14 +1,17 @@
+
+
+// carrito en product-key, mayuscula cuando se usa global
 export const PRODUCT_KEY = 'product';
 
-export const getItemFromStorage = (key, defaultValue = []) => {
+export const getItemFromStorage = (key) => {
   try {
+    //modifico con parse el string del storage a objeto
     const storage = JSON.parse(window.localStorage.getItem(key));
     return storage;
   } catch {
     console.error('No se pudo obtener el elemento del local storage');
   }
 }
-
 const setItemInStorage = (key, value) => {
   try {
     window.localStorage.setItem(key, JSON.stringify(value))
@@ -18,10 +21,12 @@ const setItemInStorage = (key, value) => {
 }
 
 export const setItemInCart = (key, item) => {
+  console.log(item)
   const itemWithQuantity = {
     ...item,
     quantity: 1,
   }
+
   const currentItemMatch = findItemInCard(key, item);
   let currentItems = getItemFromStorage(key);
   let allProducts;
@@ -56,6 +61,8 @@ export const setItemInCart = (key, item) => {
   }
 }
 
+// en el if elimino los productos iguales que tienen cantidad mayor a 1
+// en el else elimino los productos que solo se agregaron 1
 export const clearElementInCart = (key, item) => {
   let currentItems = getItemFromStorage(key);
   const currentItemMatch = findItemInCard(key, item);
@@ -74,6 +81,14 @@ export const clearElementInCart = (key, item) => {
 
   setItemInStorage(key, currentItems);
 }
+
+export const clearAll = (key) => {
+  let currentItems = getItemFromStorage(key)
+  if(currentItems){
+    currentItems.clear()
+  }
+  }
+
 
 
 const findItemInCard = (key, item) => {

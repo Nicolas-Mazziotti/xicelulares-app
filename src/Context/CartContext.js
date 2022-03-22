@@ -1,5 +1,5 @@
 import React, { createContext, useState} from "react";
-import { getItemFromStorage, PRODUCT_KEY } from "./Helpers/localStorage";
+import { getItemFromStorage, PRODUCT_KEY } from "../Helpers/localStorage";
 
 // 1 Creo el context
 

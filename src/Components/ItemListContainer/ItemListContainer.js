@@ -4,7 +4,7 @@ import Item from "../Item/Item";
 import './ItemListContainer.css'
 
 //Mapeo los productos, agrego un identificador unico y una prop para llamarlo en Item
-const ItemListContainer = () => {
+const ItemListContainer = (topProducts) => {
   return (
     <div className="itemsContainer">
       {ProductsData.map(item => {

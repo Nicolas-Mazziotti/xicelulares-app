@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { CartContext } from "../../Context/CartContext";
-import { getItemFromStorage, clearElementInCart, PRODUCT_KEY } from "../../Context/Helpers/localStorage";
+import { getItemFromStorage, clearElementInCart, PRODUCT_KEY, clearAll } from "../../Helpers/localStorage";
 
 const Cart = () => {
 
@@ -26,10 +26,13 @@ const Cart = () => {
               <p>{`Cantidad: ${cartItem.quantity}`}</p>
               <button onClick={() => clearElementInCard(cartItem)}>Eliminar</button>
             </div>
+            
           )
        })}
       </div>
-      <button className="btn btn-primary">Finalizar Compra</button>
+      <button onClick={() => clearAll(cartItems)} className="btn btn-primary">Eliminar Todo</button>
+      <button className="btn btn-primary">Finalizar</button>
+      
     </div>
   )
 }
