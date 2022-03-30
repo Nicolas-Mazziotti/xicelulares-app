@@ -25,6 +25,7 @@ const Cart = () => {
               <p>{`Precio: ${cartItem.precio}`}</p>
               <p>{`Cantidad: ${cartItem.quantity}`}</p>
               <button onClick={() => clearElementInCard(cartItem)}>Eliminar</button>
+              
             </div>
             
           )
