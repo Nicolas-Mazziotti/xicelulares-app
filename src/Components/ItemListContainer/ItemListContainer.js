@@ -11,11 +11,12 @@ const ItemListContainer = () => {
       console.log(items)
     useEffect(() => {
       const getItems = async () => {
-        const q = query(collection(db, 'products'), where('categoria', '==', 'celular'));
+        const q = query(collection(db, 'products'));
         const querySnapshot = await getDocs (q);
         const docs = []
         // console.log('data ', querySnapshot)
         querySnapshot.forEach((doc) => {
+          //pusheo la data que me llego y le agrego el id que viene separado
             docs.push({...doc.data(), id: doc.id})
           // console.log(doc.data())
          

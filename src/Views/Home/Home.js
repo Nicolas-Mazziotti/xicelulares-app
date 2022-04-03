@@ -9,7 +9,6 @@ const Home = () => {
   return (
     <>
        <Header/>
-       <TopProducts/>
        <ItemListContainer/>
        </>
   )
