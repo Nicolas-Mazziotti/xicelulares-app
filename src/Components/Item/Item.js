@@ -10,7 +10,7 @@ const Item = ({item}) => {
      
         <img src ={item.img} alt={item.modelo} />
         <p>{item.modelo}</p>
-        <p>USD{item.precio}</p>
+        <p>USD {item.precio}</p>
         <Link to={`/detail/${item.id}`}>
         <button className='btn btn-primary'>Ver Detalle</button>
         </Link>

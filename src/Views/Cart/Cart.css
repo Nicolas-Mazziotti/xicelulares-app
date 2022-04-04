@@ -1,0 +1,14 @@
+.cartContainer{
+    padding: 7rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartImg{
+    width: 60px;
+}
+
+.tablita{
+background-color: antiquewhite;
+padding-left: 7rem;
+}

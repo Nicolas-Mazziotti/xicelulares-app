@@ -3,3 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.CardDetailContainer{
+    padding: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemModelo {
+    border-right: solid;
+}
+
+.itemDescripcion{
+    padding: 2rem;
+}

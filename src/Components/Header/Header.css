@@ -6,3 +6,10 @@
     width: 100%;
     margin-top: 4rem;
 }
+
+.headerTitulo{
+    font-size: 40px;
+    border-bottom: solid 1px;
+    padding: 1rem;
+    color: orangered;
+}
